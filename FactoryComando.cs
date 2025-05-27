@@ -10,7 +10,7 @@ namespace Commandos.Models
 {
     public class FactoryComando
     {
-        public static List<Commando> Commandos = new List<Commando> { };
+        private static List<Commando> Commandos = new List<Commando> { };
         private static int numName = 1;
         public static void AddCommando(string type)
         {
@@ -35,6 +35,11 @@ namespace Commandos.Models
                     numName++;
                     break;
             }
+        }
+
+        public List<Commando> GetList()
+        {
+            return Commandos;
         }
     }
 }
