@@ -9,7 +9,7 @@ namespace Commandos.Models
     public class EntityCreation
     {
         private string Name;
-        string CodeName { get; set; }
+        public string CodeName { get; set; }
         string Status;
 
         public EntityCreation(string name, string codeName)
@@ -26,6 +26,7 @@ namespace Commandos.Models
             {
                 return Name;
             }
+
             else if (commanderRank.ToUpper() == "COLONEL")
             {
                 return CodeName;
