@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Commandos.Models
 {
-    class Weapon
+    public class Weapon
     {
         string Name;
         string Producer;
