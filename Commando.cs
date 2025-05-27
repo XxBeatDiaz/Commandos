@@ -50,7 +50,7 @@ namespace Commandos.Models
             Status = "Hidd.";
         }
 
-        public void Attack()
+        public virtual void Attack()
         {
             Console.WriteLine($"{CodeName}: Attack");
             Status = "Attack.";
