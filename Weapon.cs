@@ -19,6 +19,10 @@ namespace Commandos.Models
             NumberOfBullets = numberOfBullets;
         }
 
-
+        public void Shoot()
+        {
+            Console.WriteLine("Shoot a bullet");
+            NumberOfBullets--;
+        }
     }   
 }
