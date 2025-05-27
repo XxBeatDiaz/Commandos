@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 namespace Commandos.Models
 {
     class EntityCreation
-    {
+    {       
     }
 }
