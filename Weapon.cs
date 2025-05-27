@@ -8,5 +8,6 @@ namespace Commandos.Models
 {
     class Weapon
     {
+
     }
 }
