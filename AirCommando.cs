@@ -14,5 +14,11 @@ namespace Commandos.Models
         {
             Console.WriteLine("The pilot parachuting");
         }
+
+        public override void Attack()
+        {
+            Console.WriteLine("Air commando");
+            base.Attack();
+        }
     }
 }

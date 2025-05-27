@@ -14,5 +14,11 @@ namespace Commandos.Models
         {
             Console.WriteLine("The soldier swims");
         }
+
+        public override void Attack()
+        {
+            Console.WriteLine("Sea commando");
+            base.Attack();
+        }
     }
 }
