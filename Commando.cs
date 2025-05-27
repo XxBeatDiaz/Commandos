@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Commandos.Models
 {
-    public class EntityCreation
+    public class Commando
     {
         private string Name;
-        string CodeName { get; set; }
+        public string CodeName { get; set; }
         string Status;
 
-        public EntityCreation(string name, string codeName)
+        public Commando(string name, string codeName)
         {
             Name = name;
             CodeName = codeName;
@@ -26,6 +26,7 @@ namespace Commandos.Models
             {
                 return Name;
             }
+
             else if (commanderRank.ToUpper() == "COLONEL")
             {
                 return CodeName;
