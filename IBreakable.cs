@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Commandos
 {
-    interface IBreakable
+    public interface IBreakable
     {
-
+        public bool Status { get; set; }
+        public int MaxHits { get; set; }
+        public int RemainingHits { get; set; }
     }
 }
