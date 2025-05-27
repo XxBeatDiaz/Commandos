@@ -6,20 +6,24 @@ using System.Threading.Tasks;
 
 namespace Commandos.Models
 {
-    public class Stone
+    public class Knife
     {
         string Name;
-        double Weight;
+        string TypeMetal;
+        string Prudocer;
         string Color;
-        bool Status;
+        double Weight;
         int Hits;
         int RemainingHits;
+        bool Status;
 
-        public Stone(string name, double weight, string color, bool status = true, int hits = 5)
+        public Knife(string name, string typeMetal, string prudocer, string color, double weight, bool status = true, int hits = 10)
         {
             Name = name;
-            Weight = weight;
+            TypeMetal = typeMetal;
+            Prudocer = prudocer;
             Color = color;
+            Weight = weight;
             Status = status;
             Hits = hits;
             RemainingHits = hits;
