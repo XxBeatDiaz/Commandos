@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Commandos.Models
 {
-    class AirCommando 
+    class AirCommando : Commando
     {
-       
+        public AirCommando(string name, string codeName) : base(name, codeName) { }
+        
+        public void parachuting()
+        {
+            Console.WriteLine("The pilot parachuting");
+        }
     }
 }
