@@ -22,7 +22,7 @@ namespace Commandos.Models
                     Commandos.Add(commando);
                     numName++;
                     break;
-
+                   
                 case "Sea":
                     commando = new SeaCommando($"yoni{numName}", "y");
                     Commandos.Add(commando);
@@ -34,9 +34,7 @@ namespace Commandos.Models
                     Commandos.Add(commando);
                     numName++;
                     break;
-
             }
         }
     }
-
 }
