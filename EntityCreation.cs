@@ -10,28 +10,32 @@ namespace Commandos.Models
     {
         string Name;
         string CodeName;
-        string[] Status;
+        string Status;
 
         public EntityCreation(string name, string codeName)
         {
             Name = name;
             CodeName = codeName;
+            Status = "unknown";
             string[] Tools = { "Hammer", "Water bottle", "Bag", "Rope", "Chisel" };
         }
 
         public void Walk()
         {
-            Console.WriteLine();
+            Console.WriteLine("Walk");
+            Status = "walk";
         }
 
         public void Hide()
         {
-            Console.WriteLine();
+            Console.WriteLine("Hide");
+            Status = "Hidd";
         }
 
         public void Attack()
         {
-            Console.WriteLine();
+            Console.WriteLine($"{CodeName}: Attack");
+            Status = "Attack";
         }
     }
 }
