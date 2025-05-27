@@ -8,8 +8,8 @@ namespace Commandos.Models
 {
     public class EntityCreation
     {
-        string Name;
-        string CodeName;
+        private string Name;
+        string CodeName { get; set; }
         string Status;
 
         public EntityCreation(string name, string codeName)
@@ -20,22 +20,39 @@ namespace Commandos.Models
             string[] Tools = { "Hammer", "Water bottle", "Bag", "Rope", "Chisel" };
         }
 
+        public string SayName(string commanderRank)
+        {
+            if (commanderRank.ToUpper() == "GENERAL")
+            {
+                return Name;
+            }
+            else if (commanderRank.ToUpper() == "COLONEL")
+            {
+                return CodeName;
+            }
+
+            else
+            {
+                return "The information is classified.";
+            }
+        }
+
         public void Walk()
         {
             Console.WriteLine("Walk");
-            Status = "walk";
+            Status = "walk.";
         }
 
         public void Hide()
         {
             Console.WriteLine("Hide");
-            Status = "Hidd";
+            Status = "Hidd.";
         }
 
         public void Attack()
         {
             Console.WriteLine($"{CodeName}: Attack");
-            Status = "Attack";
+            Status = "Attack.";
         }
     }
 }
