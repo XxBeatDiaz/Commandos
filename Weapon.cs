@@ -8,6 +8,17 @@ namespace Commandos.Models
 {
     class Weapon
     {
+        string Name;
+        string Producer;
+        int NumberOfBullets;
 
-    }
+        public Weapon(string name, string producer, int numberOfBullets)
+        {
+            Name = name;
+            Producer = producer;
+            NumberOfBullets = numberOfBullets;
+        }
+
+
+    }   
 }
