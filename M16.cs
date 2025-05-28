@@ -11,7 +11,7 @@ namespace Commandos.Models
     {
         int NumberOfBullets;
 
-        public M16(int numberOfBullets) : base("M16", "COLT")
+        public M16(int numberOfBullets = 29) : base("M16", "COLT")
         {
             NumberOfBullets = numberOfBullets;
         }

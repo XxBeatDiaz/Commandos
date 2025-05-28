@@ -11,7 +11,7 @@ namespace Commandos.Models
     {
         int NumberOfBullets;
 
-        public AK47(int numberOfBullets) : base("AK47", "KALASHNIKOV")
+        public AK47(int numberOfBullets = 30) : base("AK47", "KALASHNIKOV")
         {
             NumberOfBullets = numberOfBullets;
         }
