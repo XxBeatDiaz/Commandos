@@ -8,7 +8,6 @@ namespace Commandos.Models
 {
     public interface IShootable
     {
-        public static bool ShootAble;
-        public static int Shoots;
+        public void Shoot();
     }
 }

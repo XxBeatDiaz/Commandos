@@ -10,7 +10,6 @@ namespace Commandos.Models
     {
         string Name;
         string Producer;
-        int NumberOfBullets;
 
         public Weapon(string name, string producer)
         {

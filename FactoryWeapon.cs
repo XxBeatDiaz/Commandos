@@ -17,31 +17,37 @@ namespace Commandos.Models
             switch (type)
             {
                 case "Stone":
-                    weapon = new Weapon($"avi{numName}", "a", 4);
+                    weapon = new Weapon($"avi{numName}", "a");
                     Weapons.Add(weapon);
                     numName++;
                     break;
 
                 case "Knife":
-                    weapon = new Weapon($"yosi{numName}", "y", 8);
+                    weapon = new Weapon($"yosi{numName}", "y");
                     Weapons.Add(weapon);
                     numName++;
                     break;
 
-                case "AK7":
-                    weapon = new Weapon($"avi{numName}", "a", 30);
+                case "AK47":
+                    weapon = new Weapon($"avi{numName}", "a");
+                    Weapons.Add(weapon);
+                    numName++;
+                    break;
+
+                case "M16":
+                    weapon = new Weapon($"shimi{numName}", "s");
                     Weapons.Add(weapon);
                     numName++;
                     break;
 
                 case "M4A1":
-                    weapon = new Weapon($"yosi{numName}", "y", 27);
+                    weapon = new Weapon($"meni{numName}", "n");
                     Weapons.Add(weapon);
                     numName++;
                     break;
 
                 default:
-                    weapon = new Weapon($"yoram{numName}", "m", 0);
+                    weapon = new Weapon($"yoram{numName}", "m");
                     Weapons.Add(weapon);
                     numName++;
                     break;

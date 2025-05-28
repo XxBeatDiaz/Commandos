@@ -30,7 +30,7 @@ namespace Commandos.Models
                     break;
 
                 case "operational":
-                    commando = new Commando($"yoni{numName}", "y");
+                    commando = new Commando($"Sivan{numName}", "m");
                     Commandos.Add(commando);
                     numName++;
                     break;
