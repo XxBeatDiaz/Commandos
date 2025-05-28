@@ -12,17 +12,10 @@ namespace Commandos.Models
         string Producer;
         int NumberOfBullets;
 
-        public Weapon(string name, string producer, int numberOfBullets)
+        public Weapon(string name, string producer)
         {
             Name = name;
-            Producer = producer;
-            NumberOfBullets = numberOfBullets;
-        }
-
-        public void Shoot()
-        {
-            Console.WriteLine("Shoot a bullet");
-            NumberOfBullets--;
+            Producer = producer;           
         }
     }   
 }
