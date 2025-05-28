@@ -12,7 +12,7 @@ namespace Commandos.Models
         int HealthBar;
         bool Status;
 
-        public Enemy(string name, int healthBar, bool status = true)
+        public Enemy(string name, int healthBar = 100, bool status = true)
         {
             Name = name;
             HealthBar = healthBar;

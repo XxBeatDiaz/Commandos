@@ -29,6 +29,12 @@ namespace Commandos.Models
                     numName++;
                     break;
 
+                case "operational":
+                    commando = new Commando($"yoni{numName}", "y");
+                    Commandos.Add(commando);
+                    numName++;
+                    break;
+
                 default:
                     commando = new Commando($"malca{numName}", "m");
                     Commandos.Add(commando);
@@ -36,7 +42,6 @@ namespace Commandos.Models
                     break;
             }
         }
-
         public List<Commando> GetList()
         {
             return Commandos;
