@@ -8,8 +8,7 @@ namespace Commandos
 {
     public interface IBreakable
     {
-        public bool Status { get; set; }
-        public int MaxHits { get; set; }
-        public int RemainingHits { get; set; }
+        public bool Status();
+        public void Hit();
     }
 }

@@ -6,25 +6,23 @@ using System.Threading.Tasks;
 
 namespace Commandos.Models
 {
-    public class Knife : Weapon, IBreakable
+    public class BaseballBat : Weapon, IBreakable
     {
-        string TypeMetal;
+        string Name;
         string Color;
         double Weight;
         bool BreakStatus;
         int Hits;
         int RemainingHits;
 
-        public Knife(string typeMetal,  string color, double weight, int hits = 10) : base("Knife", "Naman")
-        {            
+        public BaseballBat(string color, double weight, int hits = 10) : base("Baseball bat", "Yenkis")
+        {
             BreakStatus = true;
-            TypeMetal = typeMetal;
             Color = color;
             Weight = weight;
             Hits = hits;
             RemainingHits = hits;
         }
-
         public bool Status()
         {
             return BreakStatus;
